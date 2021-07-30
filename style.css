@@ -171,27 +171,96 @@ main {
 }
 
 /* RESPONSIVE style */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
+  main {
+    width: auto;
+    height: auto;
+  }
+
   .player h2 {
     padding: 0rem;
+    margin: 0;
     font-size: 2.5rem;
   }
   .name {
     word-spacing: 0px;
   }
+  .score {
+    font-size: 7rem;
+  }
   .current {
     padding: 0.5rem;
-    margin: 1rem 1rem 0;
-    width: 90%;
+    margin: 0;
+    width: 80%;
   }
   .btn--new {
-    top: 5.2rem;
+    top: 3rem;
   }
-
+  .dice {
+    top: 14.5rem;
+    height: 8rem;
+  }
   .btn--roll {
-    top: 37.3rem;
+    top: 27rem;
   }
   .btn--hold {
-    top: 44.1rem;
+    top: 33rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  main {
+    height: 40rem;
+  }
+  .player {
+    padding: 5.1rem;
+  }
+  .player h2 {
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+  }
+  .score {
+    font-size: 2rem;
+  }
+  .current {
+    padding: 1rem;
+    width: 84%;
+  }
+  .current-label {
+    font-size: 1.4rem;
+  }
+  .current-score {
+    font-size: 2.5rem;
+  }
+  .btn--new {
+    top: 1rem;
+  }
+  .dice {
+    top: 8rem;
+    height: 5.5rem;
+  }
+  .btn {
+    padding: 0.6rem 0.9rem;
+    font-size: 1.3rem;
+  }
+  .btn--roll {
+    top: 15rem;
+  }
+  .btn--hold {
+    top: 21.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .player {
+    padding: 4.5rem;
+  }
+  .player h2 {
+    text-transform: capitalize;
+    font-size: 1.9rem;
+  }
+  .current {
+    width: 95%;
+  }
+  .btn {
+    padding: 0.7rem 1.4rem;
   }
 }
